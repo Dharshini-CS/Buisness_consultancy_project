@@ -154,7 +154,7 @@ body {
 .green-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #43ba7f;
+  background-color: #ff511a;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -319,7 +319,7 @@ header
 .header-area .main-nav .nav li:last-child a {
   font-size: 14px;
   color: #fff;
-  background-color: #43ba7f;
+  background-color: #ff511a;
   padding: 10px 20px !important;
   display: inline-block;
   border-radius: 5px;
@@ -825,7 +825,7 @@ section.services {
   transition: all .5s;
   float: left;
   font-size: 64px;
-  color: #43ba7f;
+  color: #ff511a;
   margin-bottom: 30px;
   margin-right: 30px;
 }
@@ -860,7 +860,7 @@ section.simple-cta h4 {
 
 section.simple-cta h4 em {
   font-style: normal;
-  color: #43ba7f;
+  color: #ff511a;
 }
 
 section.simple-cta h4 strong {
@@ -967,7 +967,7 @@ section.about-us ul.nacc li span.title {
 }
 
 section.about-us ul.nacc li span.item-title {
-  color: #43ba7f !important;
+  color: #ff511a!important;
   font-weight: 600 !important;
 }
 
@@ -1102,7 +1102,7 @@ section.testimonials .section-heading {
 .testimonials .item i {
   width: 70px;
   height: 70px;
-  background-color: #43ba7f;
+  background-color: #ff511a;
   display: inline-block;
   text-align: center;
   line-height: 70px;
@@ -1129,7 +1129,7 @@ section.testimonials .section-heading {
   display: block;
   font-size: 15px;
   font-weight: 600;
-  color: #43ba7f;
+  color: #ff511a;
 }
 
 .testimonials .item img {
@@ -1280,7 +1280,7 @@ section.top-section .accordions {
   transition: transform 200ms ease-in-out;
 }
 .accordion-head.is-open {
-  color: #43ba7f;
+  color:#ff511a;
   border-bottom: none;
 }
 .accordion-head.is-open .icon {
@@ -1329,7 +1329,7 @@ section.what-we-do {
   position: absolute;
   font-style: normal;
   font-size: 44px;
-  color: #43ba7f;
+  color: #ff511a;
   font-weight: 600;
   right: 15px;
   top: 5px;
@@ -1393,7 +1393,7 @@ services page
 .main-services .right-text-content i,
 .main-services .left-text-content i {
   font-size: 64px;
-  color: #43ba7f;
+  color: #ff511a;
   background-color: #ecf8f2;
   width: 120px;
   height: 120px;
@@ -1545,7 +1545,7 @@ section.map .info-item:hover {
 
 section.map .info-item i {
   font-size: 36px;
-  color: #43ba7f;
+  color:#ff511a;
   margin-bottom: 25px;
 }
 
@@ -1559,7 +1559,7 @@ section.map .info-item h4 {
 section.map .info-item a {
   font-size: 15px;
   font-weight: 600;
-  color: #43ba7f;
+  color: #ff511a;
   transition: all 0.3s;
 }
 
@@ -1614,7 +1614,7 @@ section.map .info-item a:hover {
 }
 
 #contact button.orange-button:hover {
-  background-color: #43ba7f;
+  background-color: #ff511a;
 }
 
 
