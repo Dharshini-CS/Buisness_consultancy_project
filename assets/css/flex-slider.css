@@ -209,7 +209,7 @@ html[xmlns] .flexslider .slides {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .flex-control-paging li a {
   width: 11px;
@@ -228,7 +228,7 @@ html[xmlns] .flexslider .slides {
   border-radius: 20px;
 }
 .flex-control-paging li a:hover {
-  background: #333;
+  background: #0c0c0c;
   background: rgba(0, 0, 0, 0.7);
 }
 .flex-control-paging li a.flex-active {

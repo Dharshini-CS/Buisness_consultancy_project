@@ -96,7 +96,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #212741;
+  color: #000000;
 }
 
 ul {
@@ -106,7 +106,7 @@ ul {
 p {
   font-size: 15px;
   line-height: 26px;
-  color: #212741;
+  color: #000000;
 }
 
 img {
@@ -166,6 +166,7 @@ body {
 
 .green-button a:hover {
   opacity: 0.9;
+  background-color: #FFD700
 }
 
 .orange-button a {
@@ -183,6 +184,7 @@ body {
 
 .orange-button a:hover {
   opacity: 0.9;
+  background-color: #FFD700;
 }
 
 section {
@@ -210,7 +212,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: capitalize;
-  color: #212741;
+  color: #000000;
 }
 
 .section-heading p {
@@ -253,6 +255,7 @@ header
 .header-area .main-nav {
   min-height: 80px;
   background: transparent;
+  
 }
 
 .header-area .main-nav .logo {
@@ -276,6 +279,7 @@ header
 
 .background-header .nav {
   margin-top: 18px !important;
+  background-color: #000000;
 }
 
 .header-area .main-nav .nav {
@@ -294,6 +298,7 @@ header
 .header-area .main-nav .nav li {
   padding-left: 25px;
   padding-right: 25px;
+  background-color:#000000;
 }
 
 .header-area .main-nav .nav li:last-child {
@@ -402,7 +407,7 @@ header
   opacity: 1;
   display: block;
   background: #f7f7f7;
-  color: #2a2a2a!important;
+  color: #000000 !important;
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
@@ -417,13 +422,15 @@ header
 }
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
-  background: #fff;
+
   color: #ff511a!important;
   padding-left: 25px;
+  background-color: #FFD700;
 }
 
 .header-area .main-nav .nav li.has-sub ul li a:hover:before {
   width: 3px;
+  background-color: #FFD700;
 }
 
 .header-area .main-nav .nav li.has-sub:hover ul.sub-menu {
@@ -432,6 +439,7 @@ header
   z-index: 1;
   transform: translateY(0%);
   transition-delay: 0s, 0s, 0.3s;
+  background-color: #FFD700;
 }
 
 .header-area .main-nav .menu-trigger {
@@ -573,7 +581,7 @@ header
 
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
-    color: #1e1e1e;
+    color: #000000;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -635,11 +643,12 @@ header
     padding: 0px !important;
     border: none !important;
     background: #f7f7f7 !important;
-    color: #191a20 !important;
+    color: #000000 !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
+  !important;
     color: #ff511a!important;
+    background-color: #FFD700;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
@@ -664,13 +673,14 @@ header
     height: auto;
   }
   .header-area .main-nav .nav li.has-sub:after {
-    color: #3B566E;
+    color: #000000;
     right: 30px;
     font-size: 14px;
     top: 15px;
   }
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
+    background-color: #FFD700;
   }
 }
 
@@ -690,7 +700,7 @@ banner
 .swiper-container {
   height: calc(100vh - 0px);
   margin: 0px;
-  background-color: #212741;
+  background-color:#000000;
 }
 
 .swiper-slide {
@@ -915,7 +925,7 @@ section.about-us .naccs .menu div {
   border-radius: 5px !important;
   margin-right: 30px;
   font-size: 18px;
-  color: #212741;
+  color: #000000;
   background-color: #fff;
   cursor: pointer;
   vertical-align: middle;
@@ -960,7 +970,7 @@ section.about-us ul.nacc li .last-item {
 
 section.about-us ul.nacc li span.title {
   font-size: 15px;
-  color: #212741;
+  color: #000000;
   font-weight: 600;
   display: inline-block;
   width: 24%;
@@ -973,7 +983,7 @@ section.about-us ul.nacc li span.item-title {
 
 section.about-us ul.nacc li span.item {
   font-size: 15px;
-  color: #212741;
+  color: #000000;
   font-weight: 400;
   display: inline-block;
   width: 24%;
@@ -1001,6 +1011,8 @@ section.about-us .right-content h4 {
 section.about-us .right-content p {
   margin-bottom: 50px;
 }
+
+
 
 
 /*
@@ -1039,7 +1051,7 @@ section.calculator .section-heading h4 {
 
 #calculate input,
 #calculate select {
-  background-color: rgba(121,134,151, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   border: none;
   border-radius: 5px;
   width: 100%;
@@ -1167,7 +1179,7 @@ partners
 */
 
 section.partners {
-  background-color: #212741;
+  background-color: #000000;
   padding: 80px 0px;
 }
 
@@ -1179,6 +1191,9 @@ section.partners .item {
 
 section.partners .item:hover {
   opacity: 0.75;
+  color: #FFD700;          /* golden text */
+background-color: #FFD700;  /* golden background */
+
 }
 
 
@@ -1190,7 +1205,7 @@ footer
 */
 
 footer {
-  background-color: #181d30;
+  background-color: #000000;
   text-align: center;
   padding: 25px 0px;
 }
@@ -1264,7 +1279,7 @@ section.top-section .accordions {
   padding: 35px 0px !important;  
   font-size: 22px;
   font-weight: 600;
-  color: #212741;
+  color: #000000;
   cursor: pointer;
   transition: color 200ms ease-in-out;
   
@@ -1407,7 +1422,7 @@ services page
 .main-services .left-text-content h4 {
   font-size: 36px;
   font-weight: 700;
-  color: #212741;
+  color: #000000;
   margin-top: 40px;
   margin-bottom: 30px;
 }
@@ -1427,7 +1442,7 @@ section.service-details .naccs .menu div {
   border-radius: 5px !important;
   margin-right: 30px;
   font-size: 18px;
-  color: #212741;
+  color: #000000;
   background-color: #fff;
   cursor: pointer;
   vertical-align: middle;
@@ -1480,7 +1495,7 @@ section.service-details ul.nacc li .right-content {
 
 section.service-details ul.nacc li .right-content h4 {
   font-size: 24px;
-  color: #212741;
+  color: #000000;
   margin-bottom: 25px;
   font-weight: 700;
   line-height: 40px;
@@ -1496,7 +1511,7 @@ section.service-details ul.nacc li .right-content span {
   display: block;
   font-size: 15px;
   font-weight: 500;
-  color: #212741;
+  color: #000000;
   font-style: italic;
   margin-bottom: 12px;
 }
@@ -1551,7 +1566,7 @@ section.map .info-item i {
 
 section.map .info-item h4 {
   font-size: 18px;
-  color: #212741;
+  color:#000000;
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -1571,7 +1586,7 @@ section.map .info-item a:hover {
   width: 100%;
   height: 50px;
   background-color: #f7f7f7;
-  color: #212741;
+  color: #000000;
   border-radius: 5px;
   border: none;
   padding: 0px 15px;
@@ -1586,7 +1601,7 @@ section.map .info-item a:hover {
   max-height: 24px;
   min-height: 150px;
   background-color: #f7f7f7;
-  color: #212741;
+  color: #000000;
   border-radius: 5px;
   border: none;
   padding: 15px 15px;
@@ -1597,7 +1612,7 @@ section.map .info-item a:hover {
 
 #contact input::placeholder, 
 #contact textarea::placeholder {
-  color: #212741;
+  color: #000000;
 }
 #contact button.orange-button {
   font-size: 14px;
@@ -1637,7 +1652,7 @@ body {
     display: inline-block;
   }
   .header-area {
-    background-color: #212741;
+    background-color: #000000;
   }
   .slide-inner .header-text {
     width: 80%;
