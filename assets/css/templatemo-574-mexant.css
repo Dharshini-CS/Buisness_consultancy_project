@@ -1189,16 +1189,16 @@ section {
 
 section .section-title {
     text-align: center;
-    color: #181d30;
+    color:  #212741;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
 #footer {
-    background:  #181d30 !important;
+    background:  #212741 !important;
 }
 #footer h5{
 	padding-left: 10px;
-    border-left: 3px solid #eeeeee;
+
     padding-bottom: 6px;
     margin-bottom: 20px;
     color:#ffffff;
@@ -1247,6 +1247,44 @@ section .section-title {
 #footer ul.quick-links li:hover a i {
     font-weight: 700;
 }
+#footer ul.quick-links li a i {
+  display: none;   /* hides the icon */
+}
+
+/* Apply white font color to all text inside the contact section */
+.col-xs-12.col-sm-4.col-md-4,
+.col-xs-12.col-sm-4.col-md-4 h5,
+.col-xs-12.col-sm-4.col-md-4 .contact-list,
+.col-xs-12.col-sm-4.col-md-4 .contact-list dt,
+.col-xs-12.col-sm-4.col-md-4 .contact-list dd,
+.col-xs-12.col-sm-4.col-md-4 .contact-list a {
+  color: #ffffff;
+}
+/* Make social icons stack vertically */
+.social {
+  list-style: none;       /* remove bullets */
+  padding: 0;
+  margin-top:-10px;
+  text-align: center;     /* keep them centered */
+}
+
+.social li {
+  display: block;         /* stack items vertically */
+  margin: 10px 0;         /* spacing between icons */
+}
+
+.social a {
+  color: #ffffff;         /* white icons/text */
+  text-decoration: none;  /* remove underline */
+  font-size: 20px;        /* adjust icon size */
+}
+
+.social a:hover {
+  color: #cccccc;         /* optional hover effect */
+}
+hr{
+  display:none;
+}
 
 @media (max-width:767px){
 	#footer h5 {
@@ -1256,8 +1294,6 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
-
-
 /* 
 ---------------------------------------------
 page heading
