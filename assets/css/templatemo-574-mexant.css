@@ -1215,20 +1215,21 @@ section .section-title {
 #footer ul.social li a i {
     margin-right: 5px;
 	font-size:25px;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
+	-webkit-transition: color .2s ease, transform .3s ease;
+	-moz-transition: color .2s ease, transform .3s ease;
+	transition: color .2s ease, transform .3s ease;
 }
 #footer ul.social li:hover a i {
 	font-size:30px;
 	margin-top:-10px;
+	color: #ff511a;
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{
 	color:#ffffff;
 }
 #footer ul.social li a:hover{
-	color:#eeeeee;
+	color:#ff511a;
 }
 #footer ul.quick-links li{
 	padding: 3px 0;
@@ -1251,6 +1252,30 @@ section .section-title {
   display: none;   /* hides the icon */
 }
 
+/* Hover color for quick links and subscribe */
+#footer ul.quick-links li a:hover {
+  color: #ff511a; /* change link text color on hover */
+}
+
+/* Subscribe link has class 'list-unstyled quick-links' on the anchor in the markup */
+#footer a.list-unstyled.quick-links:hover {
+  color: #ff511a; /* change subscribe text color on hover */
+}
+
+/* Ensure footer sits on top and receives pointer events (fixes Services page hover issue) */
+#footer {
+  position: relative;
+  z-index: 50;
+  pointer-events: auto;
+}
+
+/* Make hover rules more robust and smooth */
+#footer ul.quick-links li a:hover,
+#footer a.list-unstyled.quick-links:hover {
+  color: #ff511a;
+  transition: color .2s ease;
+}
+
 /* Apply white font color to all text inside the contact section */
 .col-xs-12.col-sm-4.col-md-4,
 .col-xs-12.col-sm-4.col-md-4 h5,
@@ -1260,7 +1285,7 @@ section .section-title {
 .col-xs-12.col-sm-4.col-md-4 .contact-list a {
   color: #ffffff;
 }
-/* Make social icons stack vertically */
+/* Layout for social icons: keep them horizontal */
 .social {
   list-style: none;       /* remove bullets */
   padding: 0;
@@ -1269,18 +1294,20 @@ section .section-title {
 }
 
 .social li {
-  display: block;         /* stack items vertically */
-  margin: 10px 0;         /* spacing between icons */
+  display: inline-block;  /* place items side-by-side */
+  margin: 0 8px;          /* horizontal spacing between icons */
+  vertical-align: middle;
 }
 
 .social a {
   color: #ffffff;         /* white icons/text */
   text-decoration: none;  /* remove underline */
   font-size: 20px;        /* adjust icon size */
+  transition: color .2s ease;
 }
 
 .social a:hover {
-  color: #cccccc;         /* optional hover effect */
+  color: #ff511a;         /* brand accent on hover */
 }
 hr{
   display:none;
