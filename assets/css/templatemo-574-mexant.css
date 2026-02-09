@@ -1908,4 +1908,18 @@ body {
     padding: 50px;
   }
 }
+.tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;     /* matches index page h4 */
+  font-weight: 700;    /* bold like your headings */
+  line-height: 50px;   /* consistent spacing */
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-orange {
+  color: #ff511a;
+}
 
