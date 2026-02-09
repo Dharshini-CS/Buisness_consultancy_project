@@ -1922,4 +1922,113 @@ body {
 .text-orange {
   color: #ff511a;
 }
+.about-boxes .item-box {
+  background-color: #ffffff;       /* default white background */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  margin: 20px;
+  text-align: center;
+}
 
+/* Headline styling */
+.ceo-message .section-heading h6 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ff511a;       /* orange accent */
+  font-weight: 700;
+}
+
+.ceo-message .section-heading h4 {
+  font-size: 36px;      /* matches your site’s heading style */
+  font-weight: 700;
+  color: #212741;       /* brand dark text */
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Box styling */
+.about-boxes .item-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  margin: 20px;
+  text-align: center;
+}
+
+/* Headline styling */
+.ceo-message .section-heading h6 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ff511a;
+  font-weight: 700;
+}
+
+.ceo-message .section-heading h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #212741;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Headline styling */
+.ceo-message .headline-small {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ff511a;       /* orange accent */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.ceo-message .headline-main {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;      /* professional heading size */
+  font-weight: 700;
+  color: #212741;       /* brand dark text */
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Headline styling */
+.ceo-message .headline-small {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ff511a;       /* orange accent */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.ceo-message .headline-main {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;      /* professional heading size */
+  font-weight: 700;
+  color: #212741;       /* brand dark text */
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Box styling with black shadow */
+.about-boxes .item-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #212741;
+  font-weight: 400;
+
+  /* Black shadow effect */
+  border: 1px solid #e0e0e0; /* subtle border */
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+}
