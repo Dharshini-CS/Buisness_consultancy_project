@@ -28,6 +28,31 @@ TemplateMo 574 Mexant
 https://templatemo.com/tm-574-mexant
 
 -->
+    <style>
+      /* Ensure map toggle button matches the submit orange-button appearance */
+      .map-toggle-buttons .orange-button {
+        background-color: #ff511a;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 5px;
+        border: none;
+        display: inline-block;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .map-toggle-buttons .orange-button:hover {
+        background-color: #ff9933;
+      }
+      .map-toggle-buttons .orange-button h4 {
+        margin: 0;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+    </style>
   </head>
 
 <body>
@@ -84,24 +109,19 @@ https://templatemo.com/tm-574-mexant
       <div class="row">
         <div class="col-lg-12">
           <!-- Map Toggle Buttons -->
-          <div class="map-toggle-buttons d-flex justify-content-center mb-4 gap-4">
-            <button class="map-toggle-btn active" data-location="hyderabad">
-              <i class="fa fa-map-marker"></i> Hyderabad
-            </button>
-            <button class="map-toggle-btn" data-location="mumbai">
-              <i class="fa fa-map-marker"></i> Mumbai
-            </button>
+           <div class="map-toggle-buttons d-flex justify-content-center mb-4 gap-4 ">
+            <button  id="form-submit" class="orange-button">
+          <h4><i class="fa fa-map-marker"></i> Karnataka</h4>
+          </button>
           </div>
 
           <!-- Hyderabad Map -->
           <div id="map-hyderabad" class="map-container active-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.9825547447!2d78.39999!3d17.495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91ec9cc5e1f5%3A0xa98a5a291fbaad24!2sStratus%20Info%20Technologies%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1643000000000" width="100%" height="450px" frameborder="0" style="border:0; border-radius: 5px; position: relative; z-index: 2;" allowfullscreen="" loading="lazy"></iframe>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3898.2428491443475!2d76.63811457438368!3d12.299425887957627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNo.%201043%2FA%2C%20CH%2032%2FA%2C%20Ground%20Floor%2C%20Devaparthiva%20Road%2C%20Chamarajapuram%20Mysore!5e0!3m2!1sen!2sin!4v1770726689507!5m2!1sen!2sin" width="100%" height="450px" frameborder="0" style="border:0; border-radius: 5px; position: relative; z-index: 2;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
-          <!-- Mumbai Map -->
-          <div id="map-mumbai" class="map-container" style="display: none;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.5532165637356!2d72.84357!3d19.117857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c2d8e1f1f1f1%3A0x1f1f1f1f1f1f1f1f!2sStratus%20Info%20Technologies%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1643000000000git" width="100%" height="450px" frameborder="0" style="border:0; border-radius: 5px; position: relative; z-index: 2;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
+          
         </div>
         <div class="col-lg-10 offset-lg-1">
           <div class="row contact-info-row">
@@ -109,16 +129,16 @@ https://templatemo.com/tm-574-mexant
               <div class="info-item hover-lift">
                 <i class="fa fa-envelope icon-hover"></i>
                 <h4>Email Address</h4>
-                <a href="mailto:strabusbom@strabus.com"> strabusbom@strabus.com</a>
-                <a href="mailto:info@strabus.com"> info@strabus.com</a>
+                <a href="mailto:strabustech@gmail.com"> strabustech@gmail.com</a>
+                
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="info-item hover-lift">
                 <i class="fa fa-phone icon-hover"></i>
                 <h4>Phone Number</h4>
-                <a href="tel:+914066319230">Tel: +91-40-66319230, 66319231</a>
-                <a href="tel:+914066312422">Fax: +91-40-66312422</a>
+                <a href="tel:+919845235689">Tel: +91 98452 35689</a>
+               
               </div>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12">
@@ -126,22 +146,17 @@ https://templatemo.com/tm-574-mexant
                 <i class="fa fa-map-marked-alt icon-hover"></i>
                 <h4>Address</h4>
                 <div class="location-section">
-                  <h5>Hyderabad</h5>
+                  <h5>Mysore, Karnataka</h5>
                   <p>
-                    1-10-63/3, SREE NIVAS
-                    Chikoti Gardens, Begumpet
-                    Hyderabad -500 016, India.
+                   Office Address: STRATEGIC BUSINESS TECHNOLOGIES,
+                    No. 1043/A, CH 32/A, Ground Floor, 
+                    Devaparthiva Road,
+                     Chamarajapuram Mysore,
+                      Karnataka 570005,
+                       India 
                   </p>
                 </div>
-                <div class="location-section">
-                  <h5>Mumbai</h5>
-                  <p>
-                    Flat No 102 'A' Wing, First Floor 
-                    Shree Sainath Co-operative Housing Society Ltd.,
-                    Anand Nagar, Vakola Police Station Lane
-                    Santacruz(East), Mumbai - 400 055
-                  </p>
-                </div>
+                
               </div>
             </div>
           </div>
