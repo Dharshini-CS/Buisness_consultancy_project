@@ -107,6 +107,22 @@ img {
   width: 100%;
   overflow: hidden;
 }
+.social li a i {
+  color: #333; /* default icon color */
+  transition: color 0.3s ease; /* smooth transition */
+}
+
+.social li a:hover i {
+  color: #FFB800; /* brand yellow on hover */
+}
+.social li a i {
+  color: #ffffff; /* default white */
+  transition: color 0.3s ease; /* smooth hover effect */
+}
+
+.social li a:hover i {
+  color: #FFB800; /* brand yellow on hover */
+}
 
 /* 
 ---------------------------------------------
