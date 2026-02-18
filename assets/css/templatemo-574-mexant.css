@@ -1283,6 +1283,25 @@ section .section-title {
     font-weight: 700;
 }
 
+/* Quick links hover animation: smooth color change and arrow slide */
+#footer .quick-links li a {
+  transition: color 0.25s ease;
+}
+#footer .quick-links li a i {
+  transition: color 0.25s ease, transform 0.25s ease;
+  display: inline-block;
+}
+#footer .quick-links li a:hover,
+#footer .quick-links li a:focus {
+  color: #FFB800 !important;
+  text-decoration: none;
+}
+#footer .quick-links li a:hover i,
+#footer .quick-links li a:focus i {
+  color: #FFB800 !important;
+  transform: translateX(6px);
+}
+
 @media (max-width:767px){
 	#footer h5 {
     padding-left: 0;
