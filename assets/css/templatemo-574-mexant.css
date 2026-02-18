@@ -1291,6 +1291,9 @@ section .section-title {
 }
 }
 
+section#footer {
+    padding: 0; /* removes the 60px padding */
+}
 
 
 /* 
