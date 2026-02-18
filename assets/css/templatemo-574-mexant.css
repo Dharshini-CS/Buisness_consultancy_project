@@ -261,8 +261,8 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  height:25px;
-  width:50px;
+  height:500px;
+  width:250px;
   
 }
 
