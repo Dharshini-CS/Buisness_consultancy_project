@@ -123,6 +123,24 @@ img {
 .social li a:hover i {
   color: #FFB800; /* brand yellow on hover */
 }
+#footer .quick-links li a {
+  color: #ffffff; /* default white */
+  transition: color 0.3s ease;
+}
+
+#footer .quick-links li a:hover {
+  color: #FFB800; /* brand yellow on hover */
+  text-decoration: none; /* optional: remove underline */
+}
+
+#footer .social li a i {
+  color: #ffffff; /* default white for icons */
+  transition: color 0.3s ease;
+}
+
+#footer .social li a:hover i {
+  color: #FFB800; /* yellow on hover */
+}
 
 /* 
 ---------------------------------------------
