@@ -159,72 +159,86 @@
     </div>
   </section>
 
-  <section class="contact-us-form" id="contact-us-form">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h6>Contact Us</h6>
-            <h4 style="color: black;">Feel free to message us</h4>
-          </div>
-        </div>
-        <div class="col-lg-10 offset-lg-1">
-          <!-- Success Message -->
-          <div id="successMessage" class="alert alert-success alert-dismissible fade" role="alert" style="display: none;">
-            <strong>Success!</strong> Your message has been sent successfully. We'll get back to you soon!
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          
-          <!-- Error Message -->
-          <div id="errorMessage" class="alert alert-danger alert-dismissible fade" role="alert" style="display: none;">
-            <strong>Error!</strong> <span id="errorText">Please fill all required fields correctly.</span>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-
-          <form id="contact" method="post" novalidate>
-            <div class="row">
-              <div class="col-lg-6 col-md-12">
-                <fieldset>
-                  <input type="text" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
-                  <small class="error-text" id="nameError"></small>
-                </fieldset>
-              </div>
-             
-              <div class="col-lg-6 col-md-12">
-                <fieldset>
-                  <input type="email" name="email" id="email" placeholder="Your E-mail..." required>
-                  <small class="error-text" id="emailError"></small>
-                </fieldset>
-              </div>
-              <div class="col-lg-12 col-md-12">
-                <fieldset>
-                  <input type="text" name="subject" id="subject" placeholder="Subject..." autocomplete="on">
-                  <small class="error-text" id="subjectError"></small>
-                </fieldset>
-              </div>
-              
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="message" id="message" placeholder="Your Message..." rows="6" required></textarea>
-                  <small class="error-text" id="messageError"></small>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">
-                    <span id="buttonText">Send Message</span>
-                    <span id="buttonSpinner" style="display: none;">
-                      <i class="fas fa-spinner fa-spin"></i> Sending...
-                    </span>
-                  </button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
+ <section class="contact-us-form" id="contact-us-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="section-heading">
+          <h6>Contact Us</h6>
+          <h4 style="color: black;">Feel free to message us</h4>
         </div>
       </div>
+      <div class="col-lg-10 offset-lg-1">
+
+        <!-- Success Message -->
+        <div id="successMessage" class="alert alert-success alert-dismissible fade" role="alert" style="display: none;">
+          <strong>Success!</strong> Your message has been sent successfully. We'll get back to you soon!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="alert alert-danger alert-dismissible fade" role="alert" style="display: none;">
+          <strong>Error!</strong> <span id="errorText">Please fill all required fields correctly.</span>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contact" method="post" novalidate>
+          <div class="row">
+            <!-- Name -->
+            <div class="col-lg-6 col-md-12">
+              <fieldset>
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" autocomplete="on" required>
+                <small class="error-text" id="nameError"></small>
+              </fieldset>
+            </div>
+
+            <!-- Email -->
+            <div class="col-lg-6 col-md-12">
+              <fieldset>
+                <label for="email">Your Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <small class="error-text" id="emailError"></small>
+              </fieldset>
+            </div>
+
+            <!-- Subject -->
+            <div class="col-lg-12 col-md-12">
+              <fieldset>
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject..." autocomplete="on">
+                <small class="error-text" id="subjectError"></small>
+              </fieldset>
+            </div>
+
+            <!-- Message -->
+            <div class="col-lg-12">
+              <fieldset>
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" placeholder="Your Message..." rows="6" required></textarea>
+                <small class="error-text" id="messageError"></small>
+              </fieldset>
+            </div>
+
+            <!-- Submit -->
+            <div class="col-lg-12">
+              <fieldset>
+                <button type="submit" id="form-submit" class="orange-button">
+                  <span id="buttonText">Send Message</span>
+                  <span id="buttonSpinner" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                  </span>
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
 <!-- Footer -->
     <section id="footer">
