@@ -22,12 +22,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 
-    <style>
-		
-		#footer {
-			margin-top: 0;
-		}
-	</style>
+  
 
     <style>
       /* Ensure map toggle button matches the submit orange-button appearance */
@@ -372,7 +367,6 @@
       const contactForm = document.getElementById('contact');
       const nameInput = document.getElementById('name');
       const emailInput = document.getElementById('email');
-      const phoneInput = document.getElementById('phone');
       const messageInput = document.getElementById('message');
       const submitBtn = document.getElementById('form-submit');
       const buttonText = document.getElementById('buttonText');
@@ -423,11 +417,6 @@
         return emailRegex.test(email);
       }
 
-      function validatePhone(phone) {
-        const phoneRegex = /^[0-9\+\-\s\(\)]{7,}$/;
-        return phoneRegex.test(phone.replace(/\s/g, ''));
-      }
-
       function validateMessage(message) {
         return message.trim().length >= 10;
       }
@@ -468,14 +457,6 @@
         }
       });
 
-      phoneInput.addEventListener('blur', function() {
-        if (!validatePhone(this.value)) {
-          showError('phone', 'Please enter a valid phone number');
-        } else {
-          clearError('phone');
-        }
-      });
-
       messageInput.addEventListener('blur', function() {
         if (!validateMessage(this.value)) {
           showError('message', 'Message must be at least 10 characters');
@@ -485,7 +466,7 @@
       });
 
       // Clear error on input focus
-      [nameInput, emailInput, phoneInput, messageInput].forEach(input => {
+      [nameInput, emailInput, messageInput].forEach(input => {
         input.addEventListener('focus', function() {
           clearError(this.id);
         });
@@ -508,11 +489,6 @@
           isValid = false;
         }
 
-        if (!validatePhone(phoneInput.value)) {
-          showError('phone', 'Please enter a valid phone number');
-          isValid = false;
-        }
-
         if (!validateMessage(messageInput.value)) {
           showError('message', 'Message must be at least 10 characters');
           isValid = false;
@@ -524,25 +500,71 @@
           buttonText.style.display = 'none';
           buttonSpinner.style.display = 'inline';
 
-          // Simulate form submission (in real scenario, send to server)
-          setTimeout(() => {
-            // Show success message
-            document.getElementById('successMessage').style.display = 'block';
-            
-            // Reset form
-            contactForm.reset();
-            quantityInput.value = 1;
+          // Prepare form data
+          const formData = new FormData(contactForm);
+
+          // Send form data to PHP backend
+          fetch('send-email.php', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.success) {
+              // Show success message
+              document.getElementById('successMessage').style.display = 'block';
+              
+              // Reset form
+              contactForm.reset();
+
+              // Reset button state
+              submitBtn.disabled = false;
+              buttonText.style.display = 'inline';
+              buttonSpinner.style.display = 'none';
+
+              // Hide success message after 5 seconds
+              setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'none';
+              }, 5000);
+            } else {
+              // Show error message
+              const errorMessage = document.getElementById('errorMessage');
+              const errorText = document.getElementById('errorText');
+              if (data.errors && data.errors.length > 0) {
+                errorText.textContent = data.errors.join(', ');
+              } else {
+                errorText.textContent = 'An error occurred while sending your message.';
+              }
+              errorMessage.style.display = 'block';
+
+              // Reset button state
+              submitBtn.disabled = false;
+              buttonText.style.display = 'inline';
+              buttonSpinner.style.display = 'none';
+
+              // Hide error message after 5 seconds
+              setTimeout(() => {
+                errorMessage.style.display = 'none';
+              }, 5000);
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            const errorMessage = document.getElementById('errorMessage');
+            const errorText = document.getElementById('errorText');
+            errorText.textContent = 'An error occurred while sending your message. Please try again.';
+            errorMessage.style.display = 'block';
 
             // Reset button state
             submitBtn.disabled = false;
             buttonText.style.display = 'inline';
             buttonSpinner.style.display = 'none';
 
-            // Hide success message after 5 seconds
+            // Hide error message after 5 seconds
             setTimeout(() => {
-              document.getElementById('successMessage').style.display = 'none';
+              errorMessage.style.display = 'none';
             }, 5000);
-          }, 1500);
+          });
         }
       });
 
